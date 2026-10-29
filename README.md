@@ -39,15 +39,26 @@ venv\Scripts\Activate.ps1
 source venv/bin/activate
 ```
 
-Install dependencies and initialize an empty local database:
+Install the local application dependencies and initialize an empty local database:
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements-local.txt
 python database/schema.py
 streamlit run app.py
 ```
 
 The app opens at `http://localhost:8501`. A webcam must be connected and permissions granted to the local Python process.
+
+## Public demo
+
+The repository includes `demo_app.py`, a public showcase that uses fictional data only. It does not access a camera, SQLite database, face images, face embeddings, or any local student records.
+
+```bash
+pip install -r requirements.txt
+streamlit run demo_app.py
+```
+
+For Streamlit Community Cloud, select `demo_app.py` as the entry point. Do not deploy `app.py` without first adding production-grade authentication, consent, secure storage, retention controls, and liveness detection.
 
 ## Data privacy and repository policy
 
