@@ -1,0 +1,41 @@
+# Python environments and caches
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+secrets.toml
+.streamlit/secrets.toml
+*.pem
+*.key
+
+# Biometric data and personally identifiable information
+database.db
+*.db
+*.sqlite
+*.sqlite3
+/data/images/
+/data/embeddings/
+/data/id_cards/
+/data/qr/
+attendance_report.pdf
+*.csv
+/datasets/
+*.pptx
+
+# Packaged app and generated artifacts
+build/
+dist/
+output/
+.ppt-build/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
