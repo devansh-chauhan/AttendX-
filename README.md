@@ -22,8 +22,8 @@ Python · Streamlit · OpenCV · InsightFace · ONNX Runtime · SQLite · NumPy 
 Prerequisite: Python 3.11 is recommended.
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/AttendX-AI.git
-cd AttendX-AI
+git clone https://github.com/devansh-chauhan/AttendX-.git
+cd AttendX-
 python -m venv venv
 ```
 
